@@ -1,0 +1,9 @@
+.body {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+.body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
