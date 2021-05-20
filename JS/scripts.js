@@ -32,6 +32,8 @@ let pokemonRepository = (function () {
     };
 })();
 
+pokemonRepository.getAll();
+pokemonRepository.add({name: "Pikachu" });
 
 // for loop
 
