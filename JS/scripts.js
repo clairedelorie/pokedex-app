@@ -19,8 +19,12 @@ let pokemonRepository = (function () {
     ];
 
     function add(pokemon) {
-        pokemonList.push(pokemon);
+        if (typeof pokemon === 'object') {
+            return pokemonList.push(pokemon);
+        } else {
+            document.write("Please insert name of Pokemon")
         }
+    }
 
     function getAll() {
         return pokemonList;
@@ -28,16 +32,14 @@ let pokemonRepository = (function () {
 
     return {
         add: add,
-        getAll: getall
+        getAll: getAll
     };
 })();
 
-pokemonRepository.getAll();
-pokemonRepository.add({name: "Pikachu" });
 
 // for loop
+let pokemonInfo = pokemonRepository.getAll();
 
-function myLoopFunction(pokemon) {
-    document.write(pokemon.name + " (" + "height " + pokemon.height + ") <br />");
-}
-pokemonList.forEach(myLoopFunction);
+pokemonInfo.forEach (function(pokemon) {
+    document.write(pokemon.name + " " + pokemon.type + " " + " (" + "height " + pokemon.height + ") <br />");
+});
