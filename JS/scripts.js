@@ -46,7 +46,7 @@ function addListItem(pokemon) {
 }
 
 function showDetails(pokemon) {
-    loadDetails(pokemon).then(function(event) {
+    loadDetails(pokemon).then(function() {
 		console.log(pokemon);
 	});
 }
