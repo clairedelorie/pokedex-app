@@ -1,9 +1,34 @@
-.body {
-    max-width: 700px;
-    margin: 0 auto;
+/* colors 
+grass- #7DCEA0
+*/
+
+* {
+    box-sizing: border-box;
   }
+
+.pokemon-list {
+    list-style-type: none;
+    }
+    
+.body {
+    margin: 0 auto;
+    }
+
 .body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: medium;
-}
+    }
+
+.button-style {
+   background-color: #7DCEA0;
+   font-size: 16px;
+   border: none;
+   text-align: center;
+   font-size: 16px;
+   padding: 12px 28px;
+   margin: 4px 2px;
+   border-radius: 12px;
+   transition-duration: 4s;
+   cursor: pointer;
+   }
