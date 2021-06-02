@@ -39,8 +39,14 @@ grass- #7DCEA0
   }
   
   #modal-container.is-visible {
-    /* CSS for modal container - add your own desired CSS styles here */
-    display: block;
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(109, 145, 212, 0.5) 
   
     
     /* to show it above other content */
@@ -56,13 +62,15 @@ grass- #7DCEA0
   
   .modal {
     margin: auto;
-    display: inline-block;
     box-sizing: border-box;
-    background: #fff;
-    padding: 15px;
+    background: rgb(255, 255, 255 .2);
+    padding: 25px;
     width: 100%;
-    max-width: 700px;
     text-align: left;
+    border-radius:30px;
+    text-transform: capitalize;
+    text-align: center;
+    
   }
   
   .modal-close {
