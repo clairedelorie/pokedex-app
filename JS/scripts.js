@@ -62,9 +62,15 @@ function loadDetails(pokemon) {
       pokemon.imageUrlFront = details.sprites.front_default;
       pokemon.imageUrlBack = details.sprites.back_default;
       pokemon.height = details.height;
-      pokemon.types = details.types;
       pokemon.weight = details.weight;
-      pokemon.abilities = details.abilities;
+      pokemon.types = [];
+      for (var i = 0; i < details.types.length; i++) {
+        pokemon.types.push(details.types[i].type.name);
+      }
+      pokemon.abilities = [];
+      for (var i = 0; i < details.abilities.length; i++) {
+        pokemon.abilities.push(details.abilities[i].ability.name);
+      }
     })
     .catch(function (e) {
       console.error(e);
@@ -79,7 +85,7 @@ function loadDetails(pokemon) {
 
     //pokemon modal
   function showModal(pokemon) {
-    let modalBody = $(".modal-body");
+    let modalBody = $('.modal-body');
     let modalHeader = $('.modal-header');
     let modalTitle = $('.modal-title');
     
@@ -91,22 +97,21 @@ function loadDetails(pokemon) {
     
     
     let nameElement = $("<h1>" + pokemon.name + "</h1>");
-    //let nameElement = document.createElement("h1");
-    nameElement.innerText = pokemon.name;
-    nameElement.classList.add("text-capitalize");
-    
-    let imagePokemon = $(
-    '<img class="pokemon-image" height="200px" width="200px">'
-    );
-    imagePokemon.attr("src", pokemon.imageUrl);
+
+//pokemon images    
+    let imagePokemonFront = $('<img class="pokemon-image" style="width:50%">');
+       imagePokemonFront.attr("src", pokemon.imageUrlFront);
+    let imagePokemonBack = $('<img class="modal-img" style="width:50%">');
+      imagePokemonBack.attr('src', pokemon.imageUrlBack);
     
     let heightElement = $("<p>" + "Height : " + pokemon.height + "</p>");
     let weightElement = $("<p>" + "Weight : " + pokemon.weight + "</p>");
     let typeElement = $("<p>" + "Type : " + pokemon.types + "</p>");
-    let abilitiesElement = $('<p>' + 'Abilities : ' + item.abilities + '</p>');
+    let abilitiesElement = $('<p>' + 'Abilities : ' + pokemon.abilities + '</p>');
     
     modalBody.append(nameElement);
-    modalBody.append(imagePokemon);
+    modalBody.append(imagePokemonFront);
+    modalBody.append(imagePokemonBack)
     modalBody.append(heightElement);
     modalBody.append(weightElement);
     modalBody.append(typeElement);
