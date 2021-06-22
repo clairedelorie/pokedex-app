@@ -36,7 +36,7 @@ grass- #7DCEA0
 
 .modal {
   position: fixed;
-/*   display: none; */
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -50,9 +50,11 @@ grass- #7DCEA0
   text-transform:capitalize;
 }
 
+.modal.show {
+  display: block;
+}
 
 .close {
-/*   display:none; */
   float: right;
   -webkit-appearance: none;
   border: 0;
@@ -61,5 +63,4 @@ grass- #7DCEA0
   text-decoration: underline;
  
 }
-
 
