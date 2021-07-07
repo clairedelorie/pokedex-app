@@ -1,31 +1,55 @@
-  
-/* colors 
-grass- #7DCEA0
-*/
-
-* {
-  box-sizing: border-box;
+:root {
+  --white: #ffffff;
+  --seafoam-green: #ECF9F2;
+  --baby-blue: #CFEDEE;
+  --celadon: #AFCCA9;
+  --kelly-green: #89BE63;
+  --font: 'Quicksand', sans-serif;
 }
 
-.pokemon-list {
-  list-style-type: none;
-  }
+.navbar {
+  text-align: center;
+  background-color: #AFCCA9;
+}
 
-.body {
+body {
+  margin: 10px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-size: medium;
+  background-color: #ECF9F2;
+  text-align: center;
   }
 
 
+  h1 {
+    margin:20px;
+  }
 
+.list-group-item {
+  border: none;
+  width: 100%;
+  padding: 12px 28px;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #CFEDEE;
+  border: 3px solid #AFCCA9;
+  border-radius: 6px;
+}
 
-.button-style {
+button-style {
  background-color: #7DCEA0;
- font-size: 16px;
+ font-size: 20px;
  border: none;
  text-align: center;
- font-size: 16px;
+ font-size: 20px;
  padding: 12px 28px;
  margin: 4px 2px;
  border-radius: 12px;
@@ -35,32 +59,7 @@ grass- #7DCEA0
 
 
 .modal {
-  position: fixed;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color:aliceblue;
-  height: 75%;
-  width: 75%;
-  text-align: center;
-  border-radius: 12px;
-  overflow: auto;
-  z-index: 999;
-  text-transform:capitalize;
+  background-color:#ffffff;
 }
 
-.modal.show {
-  display: block;
-}
-
-.close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
- 
-}
 
