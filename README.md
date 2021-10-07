@@ -20,3 +20,7 @@ A simple Javascript app using a Pokemon API to create a pokedex.
 - HTML
 - JQuery
 - Bootstrap
+
+## GitHub Pages
+
+(https://clairedelorie.github.io/pokedex-app/)
