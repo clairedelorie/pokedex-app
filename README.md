@@ -1,8 +1,8 @@
 # Pokedex-App
 
----
-
 ![](img/pokedex%20app.png)
+
+---
 
 ## Description
 
