@@ -2,7 +2,7 @@
 
 ---
 
-![](img/pokedex%20app.png
+![](img/pokedex%20app.png)
 
 ## Description
 
