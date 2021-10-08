@@ -2,6 +2,8 @@
 
 ---
 
+![](img/pokedex%20app.png
+
 ## Description
 
 A simple Javascript app using a Pokemon API to create a pokedex.
